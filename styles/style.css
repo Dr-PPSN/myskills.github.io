@@ -1,39 +1,104 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
 body{
-    margin: 0;
-    padding: 0;
+  overflow-x: hidden;
+  background: white;
 }
-#bg{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(33, 241, 14);
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+::-webkit-scrollbar {
+  width: 0;
 }
-#oben{
-    width: 100%;
-    height: 100px;
-    background-color: red;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+/*Hintergründe gestalten*/
+.hintergrunddiv {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
 }
-#unten { 
-    width:100%;
-    height: 100px;
-    background-color: royalblue;
-    position: fixed;
-    bottom:0px;
-    left:0px;
+#bgweltraum {
+  background: rgb(8,2,116);
+  background: -moz-linear-gradient(0deg, rgba(8,2,116,1) 0%, rgba(2,0,36,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(8,2,116,1) 0%, rgba(2,0,36,1) 100%);
+  background: linear-gradient(0deg, rgba(8,2,116,1) 0%, rgba(2,0,36,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#080274",endColorstr="#020024",GradientType=1);
 }
-#paragraph1{
-    font-size: 40px;
-    font-style: italic;
-
+#bgrackete {
+  background: rgb(2,70,116);
+  background: -moz-linear-gradient(0deg, rgba(2,70,116,1) 0%, rgba(8,2,116,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(2,70,116,1) 0%, rgba(8,2,116,1) 100%);
+  background: linear-gradient(0deg, rgba(2,70,116,1) 0%, rgba(8,2,116,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#024674",endColorstr="#080274",GradientType=1);
 }
-
-#bilf{
-   border: 22px; 
-   border-color: slateblue;
+#bgflugzeug {
+  background: rgb(6,144,199);
+  background: -moz-linear-gradient(0deg, rgba(6,144,199,1) 0%, rgba(2,70,116,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(6,144,199,1) 0%, rgba(2,70,116,1) 100%);
+  background: linear-gradient(0deg, rgba(6,144,199,1) 0%, rgba(2,70,116,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0690c7",endColorstr="#024674",GradientType=1);
 }
+#bgstadt {
+  background: rgb(170,231,255);
+  background: -moz-linear-gradient(0deg, rgba(170,231,255,0.9609472724828827) 0%, rgba(6,144,199,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(170,231,255,0.9609472724828827) 0%, rgba(6,144,199,1) 100%);
+  background: linear-gradient(0deg, rgba(170,231,255,0.9609472724828827) 0%, rgba(6,144,199,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aae7ff",endColorstr="#0690c7",GradientType=1);
+}
+#bgstrand {
+  background: #aae7ff;
+}
+#bgwasser {
+  background: rgb(111 202 225);
+}
+#bgunten {
+  background: rgb(176 137 0);
+}
+/*Welraum*/
+#planet1 {
+  border-radius: 60%;
+  background: rgb(85,48,4);
+  background: linear-gradient(98deg, rgba(85,48,4,1) 0%, rgba(121,86,9,1) 35%, rgba(194,132,4,1) 100%);
+  background: -moz-linear-gradient(98deg, rgba(85,48,4,1) 0%, rgba(121,86,9,1) 35%, rgba(194,132,4,1) 100%);
+  background: -webkit-linear-gradient(98deg, rgba(85,48,4,1) 0%, rgba(121,86,9,1) 35%, rgba(194,132,4,1) 100%);
+  background: linear-gradient(98deg, rgba(85,48,4,1) 0%, rgba(121,86,9,1) 35%, rgba(194,132,4,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020020",endColorstr="#0e064b",GradientType=1);
+  z-index: 2;
+  width: 18vh;
+  height: 18%;
+  position: absolute;
+  top: 20%;
+  left: 17%;
+}
+#planet2 {
+  background: rgb(31,31,31);
+  background: -moz-linear-gradient(98deg, rgba(31,31,31,1) 0%, rgba(75,76,78,1) 65%, rgba(126,128,126,1) 100%);
+  background: -webkit-linear-gradient(98deg, rgba(31,31,31,1) 0%, rgba(75,76,78,1) 65%, rgba(126,128,126,1) 100%);
+  background: linear-gradient(98deg, rgba(31,31,31,1) 0%, rgba(75,76,78,1) 65%, rgba(126,128,126,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#7e807e",GradientType=1);
+  z-index: 2;
+  width: 18vh;
+  height: 18%;
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  border-radius: 50%;
+}
+.stern {
+  background: white;
+  width: 0.5vh;
+  height: 0.5%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+#begruzung {
+  font-size: 12vh;
+  color: white;
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  text-shadow: rgb(201, 0, 0) 3px 0px 0px, rgb(201, 0, 0) 2.83487px 0.981584px 0px, rgb(201, 0, 0) 2.35766px 1.85511px 0px, rgb(201, 0, 0) 1.62091px 2.52441px 0px, rgb(201, 0, 0) 0.705713px 2.91581px 0px, rgb(201, 0, 0) -0.287171px 2.98622px 0px, rgb(201, 0, 0) -1.24844px 2.72789px 0px, rgb(201, 0, 0) -2.07227px 2.16926px 0px, rgb(201, 0, 0) -2.66798px 1.37182px 0px, rgb(201, 0, 0) -2.96998px 0.42336px 0px, rgb(201, 0, 0) -2.94502px -0.571704px 0px, rgb(201, 0, 0) -2.59586px -1.50383px 0px, rgb(201, 0, 0) -1.96093px -2.27041px 0px, rgb(201, 0, 0) -1.11013px -2.78704px 0px, rgb(201, 0, 0) -0.137119px -2.99686px 0px, rgb(201, 0, 0) 0.850987px -2.87677px 0px, rgb(201, 0, 0) 1.74541px -2.43999px 0px, rgb(201, 0, 0) 2.44769px -1.73459px 0px, rgb(201, 0, 0) 2.88051px -0.838247px 0px;
+}
+/*bg rackete*/
